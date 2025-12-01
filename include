@@ -1,0 +1,22 @@
+#ifndef MEDICAL_H
+#define MEDICAL_H
+
+#define MAX 100 
+
+typedef struct medical{
+
+    int id;
+    char name[50];
+    int qty;
+    float price;
+} Medicine;
+
+void load(Medicine m[] , int *n);
+void saveToFile(Medicine m[] , int n);
+void add(Medicine m[] , int *n);
+void view(Medicine m[] , int n);
+void search(Medicine m[] , int n);
+void update(Medicine m[] , int n);
+void del(Medicine m[] , int *n);
+
+#endif
